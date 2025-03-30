@@ -38,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "324c4e47-8cd7-4d6d-8950-ab5b740422ea"
+      }
+    },
+    "owner": "mathieuprog"
   }
 }
