@@ -29,12 +29,17 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon-pocomos.png",
+          "backgroundColor": "#ffffff",
+          "image": "./assets/images/pocomos-logo.png",
+          "dark": {
+            "backgroundColor": "#000000",
+            "image": "./assets/images/pocomos-logo.png"
+          },
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#e26d00"
+          "resizeMode": "contain"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
