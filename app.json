@@ -30,16 +30,17 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#ffffff",
-          "image": "./assets/images/pocomos-logo.png",
+          "image": "./assets/images/logo.png",
           "dark": {
             "backgroundColor": "#000000",
-            "image": "./assets/images/pocomos-logo.png"
+            "image": "./assets/images/logo.png"
           },
           "imageWidth": 200,
           "resizeMode": "contain"
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
