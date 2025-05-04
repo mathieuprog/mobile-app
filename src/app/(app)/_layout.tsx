@@ -55,13 +55,9 @@ export default function RootLayout() {
     return <Text>Loading...</Text>;
   }
 
-  console.log('hello?');
-
   if (!session) {
     return <Redirect href="/sign-in" />;
   }
-
-  console.log('world!');
 
   return (
     <Stack 
@@ -71,9 +67,21 @@ export default function RootLayout() {
           fontWeight: 'bold',
         },
         headerRight: () => (
-          <Pressable onPress={signOut}>
-            <Icon name="right-from-bracket" size={22} color="#000" />
-          </Pressable>
+          <>
+            <Pressable onPress={() => {
+              console.log('PRESS IN HEADER RIGHT');
+              signOut();
+            }}>
+              <Text>Not clickable</Text>
+            </Pressable>
+
+            <Pressable onPress={() => {
+              console.log('PRESS IN HEADER RIGHT');
+              signOut();
+            }}>
+              <Icon name="right-from-bracket" size={22} color="#000" />
+            </Pressable>
+          </>
         ),
       }}
     />
